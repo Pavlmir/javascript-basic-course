@@ -33,20 +33,22 @@ myBascket.addProduct(productCreator("Булочка", 300), 1);
 myBascket.addProduct(productCreator("Крендель", 300), 5);
 
 function fillingCart(myCart) {
-    let cart = document.getElementById('cart');
-    let catalog = document.getElementById('catalog');
+    let cart = document.querySelector('#cart');
+    let catalog = document.querySelector('#catalog');
     let resCount = 0;
     let resName = ' ';
 
     let resSum = myCart.countBasketPrice();
-    myCart.bascket.forEach(el => resCount += el.count);
-    myCart.bascket.forEach(el => resName += el.name + ' ');
+    myCart.bascket.forEach(el => {
+        resCount += el.count;
+        resName += el.name + ' ';
+    });
     console.log(resCount)
     if (resSum === 0 && resCount === 0) {
         cart.textContent = "Корзина пуста"
     }
-    cart.textContent = `В корзине: ${resCount} товаров на сумму ${resSum} рублей`
-    catalog.textContent = `Каталог: ${resName} `
+    cart.insertAdjacentHTML('afterBegin', `В корзине: ${resCount} товаров на сумму ${resSum} рублей`);
+    catalog.insertAdjacentHTML('afterBegin', `Каталог: ${resName} `);
 
 }
 
