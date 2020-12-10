@@ -11,27 +11,67 @@
 <body>
     <form>
         <div class="product-group">
+            <div id="catalog" class="product-item"> Корзина с товарами: - </div>
+            <div id="cart" class="product-item"> Итого </div>
+        </div>
+        <div class="product-group">
             <img class="product-photo product-item" src="images/croissant.jpg" alt="">
-            <div class="product-description product-item"> Круасан - 50 руб. за шт. </div>
-            <div class="product-item"><input class="product-btn-buy" type="button" value="Купить" /></div>
+            <div id="product_1" class="product-description product-item">
+                <div class="name">Круасан</div>
+                <div class="price">50</div>
+                <div class="unit">шт.</div>
+            </div>
+            <div class="product-item">
+                <input class="product-btn-change" type="button" value="-" name="product_1" />
+                <input class="product_1" type="text" size="10" value="0" />
+                <input class="product-btn-change" type="button" value="+" name="product_1" />
+                <input class="product-btn-buy" type="button" value="Купить" name="product_1" />
+            </div>
         </div>
         <div class="product-group">
             <img class="product-photo product-item" src="images/donut.jpg" alt="">
-            <div class="product-description product-item"> Пончик - 30 руб. за шт. </div>
-            <div class="product-item"><input class="product-btn-buy" type="button" value="Купить" /></div>
+            <div id="product_2" class="product-description product-item">
+                <div class="name">Пончик</div>
+                <div class="price">30</div>
+                <div class="unit">шт.</div>
+            </div>
+            <div class="product-item">
+                <input class="product-btn-change" type="button" value="-" name="product_2" />
+                <input class="product_2" type="text" size="10" value="0" />
+                <input class="product-btn-change" type="button" value="+" name="product_2" />
+                <input class="product-btn-buy" type="button" value="Купить" name="product_2" />
+            </div>
         </div>
         <div class="product-group">
             <img class="product-photo product-item" src="images/bun.jpg" alt="">
-            <div class="product-description product-item"> Булочка - 70 руб. за шт. </div>
-            <div class="product-item"><input class="product-btn-buy" type="button" value="Купить" /></div>
+            <div id="product_3" class="product-description product-item">
+                <div class="name">Булочка</div>
+                <div class="price">70</div>
+                <div class="unit">шт.</div>
+            </div>
+            <div class="product-item">
+                <input class="product-btn-change" type="button" value="-" name="product_3" />
+                <input class="product_3" type="text" size="10" value="0" />
+                <input class="product-btn-change" type="button" value="+" name="product_3" />
+                <input class="product-btn-buy" type="button" value="Купить" name="product_3" />
+            </div>
         </div>
         <div class="product-group">
             <img class="product-photo product-item" src="images/pretzel.jpg" alt="">
-            <div class="product-description product-item"> Крендель - 80 руб. за шт. </div>
-            <div class="product-item"><input class="product-btn-buy" type="button" value="Купить" /></div>
+            <div id="product_4" class="product-description product-item">
+                <div class="name">Крендель</div>
+                <div class="price">85</div>
+                <div class="unit">шт.</div>
+            </div>
+            <div class="product-item">
+                <input class="product-btn-change" type="button" value="-" name="product_4" />
+                <input class="product_4" type="text" size="10" value="0" />
+                <input class="product-btn-change" type="button" value="+" name="product_4" />
+                <input class="product-btn-buy" type="button" value="Купить" name="product_4" />
+            </div>
         </div>
     </form>
-    <script src="less5_task1.js"></script>
+    <script src="less6_task1.js"></script>
 </body>
 
 </html>

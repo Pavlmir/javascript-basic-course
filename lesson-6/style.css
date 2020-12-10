@@ -14,12 +14,7 @@
 }
 
 .product-photo {
-  display: flex;
-  max-width: 10%;
-  flex-flow: wrap;
-  justify-content: space-between;
-  align-items: center;
-  flex: auto;
+  flex: 0 0 auto;
 }
 
 .product-description {
@@ -34,4 +29,29 @@
   height: 40px;
   justify-content: center;
   align-items: center;
+}
+
+.product-btn-change {
+  display: flex;
+  width: 40px;
+  height: 20px;
+  justify-content: center;
+  align-items: center;
+  margin: 3%;
+}
+
+input {
+  margin: 5%;
+}
+
+.name {
+  margin: 5%;
+}
+
+.price {
+  margin: 5%;
+}
+
+.unit {
+  margin: 5%;
 }
