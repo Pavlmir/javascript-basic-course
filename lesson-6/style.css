@@ -1,0 +1,37 @@
+.product-group {
+  display: flex;
+  flex-direction: row;
+  border: 3px solid #2ec548;
+}
+
+.product-item {
+  display: flex;
+  flex-grow: 1;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  height: 80px;
+}
+
+.product-photo {
+  display: flex;
+  max-width: 10%;
+  flex-flow: wrap;
+  justify-content: space-between;
+  align-items: center;
+  flex: auto;
+}
+
+.product-description {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.product-btn-buy {
+  display: flex;
+  width: 80px;
+  height: 40px;
+  justify-content: center;
+  align-items: center;
+}
