@@ -1,0 +1,44 @@
+.chess-container {
+  display: flex;
+  justify-content: center;
+}
+
+.chess-box {
+  padding: 5px;
+  flex-basis: 50px;
+  height: 50px;
+  order: 1;
+  border: 1px solid #111;
+  display: flex;
+}
+
+.chess-container-header {
+  display: flex;
+  justify-content: center;
+}
+
+.chess-box-header-col {
+  padding: 5px;
+  flex-basis: 50px;
+  height: 50px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.chess-box-header-row {
+  padding: 5px;
+  flex-basis: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.ch-black {
+  background: black;
+}
+
+.ch-white {
+  background: white;
+}
