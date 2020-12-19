@@ -1,0 +1,72 @@
+.product-group {
+  display: flex;
+  flex-direction: row;
+  border: 3px solid rgb(245, 245, 245);
+}
+
+.product-cart {
+  display: flex;
+  flex-direction: column;
+}
+
+.product-item {
+  display: flex;
+  flex-grow: 1;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  height: 80px;
+}
+
+.product-photo {
+  flex: 0 0 auto;
+}
+
+.product-description {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.product-btn-buy {
+  display: flex;
+  width: 80px;
+  height: 40px;
+  justify-content: center;
+  align-items: center;
+}
+
+.product-btn-change {
+  display: flex;
+  width: 40px;
+  height: 20px;
+  justify-content: center;
+  align-items: center;
+  margin: 3%;
+}
+
+input {
+  margin: 5%;
+}
+
+.name {
+  margin: 5%;
+}
+
+.price {
+  margin: 5%;
+}
+
+.unit {
+  margin: 5%;
+}
+
+.btn {
+  display: inline-block; /* Строчно-блочный элемент */
+  background: rgb(245, 245, 245);
+  color: rgb(19, 133, 179);
+  padding: 1rem 1.5rem; /* Поля вокруг текста */
+  text-decoration: none; /* Убираем подчёркивание */
+  border-radius: 3px; /* Скругляем уголки */
+  border: 1px outset rgb(19, 133, 179);
+}
